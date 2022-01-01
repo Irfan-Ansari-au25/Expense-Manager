@@ -10,7 +10,7 @@ const NewExpense = (props) => {
       ...formdata,
       id: Math.random().toString(),
     };
-    console.log(expenseData);
+    // console.log(expenseData);
     //from NewExpense to AppComponent
     props.onAddExpense(expenseData);
   };

@@ -67,7 +67,7 @@ const ExpenseForm = (props) => {
     // send data child to parent component
     props.onAddExpenseData(formData);
 
-    console.log(formData);
+    // console.log(formData);
   };
 
   return (
