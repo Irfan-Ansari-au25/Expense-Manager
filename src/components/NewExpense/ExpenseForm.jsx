@@ -68,6 +68,11 @@ const ExpenseForm = (props) => {
     props.onAddExpenseData(formData);
 
     // console.log(formData);
+    props.onStop();
+  };
+
+  const hideEditingHandler = () => {
+    props.onStop();
   };
 
   return (
@@ -102,8 +107,10 @@ const ExpenseForm = (props) => {
           />
         </div>
       </div>
+
       <div className="new-expense__actions">
         <button type="submit">Add Expense</button>
+        <button onClick={hideEditingHandler}>Cancel</button>
       </div>
     </form>
   );
